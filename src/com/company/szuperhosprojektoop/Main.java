@@ -17,7 +17,7 @@ public class Main {
             }
         };
 
-        Vasember v1 = new Vasember(150, true);
+        Vasember v1 = new Vasember();
         Batman b1 = new Batman();
 
         System.out.println(sz1.legyoziE(sz2));

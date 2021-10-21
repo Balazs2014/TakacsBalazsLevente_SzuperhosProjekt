@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class Vasember extends Bosszuallo implements Milliardos {
     public Random rnd = new Random();
-    public Vasember(double szuperero, boolean vanEGyengesege) {
+
+    public Vasember() {
         super(150, true);
     }
 
@@ -25,6 +26,6 @@ public class Vasember extends Bosszuallo implements Milliardos {
 
     @Override
     public String toString() {
-        return String.format("Vasember %s", super.toString());
+        return String.format("%-10s %s", "Vasember", super.toString());
     }
 }

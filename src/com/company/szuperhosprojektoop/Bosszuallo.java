@@ -14,7 +14,11 @@ public abstract class Bosszuallo implements Szuperhos {
     @Override
     public boolean legyoziE(Szuperhos sz) {
         boolean logikai = false;
-        if (this.szuperero < sz.mekkoraAzEreje() && this.vanEGyengesege) {
+        double szupereroKetszeres = this.szuperero * 2;
+        if (this.szuperero < sz.mekkoraAzEreje() && this.vanEGyengesege && sz instanceof Bosszuallo) {
+            logikai = true;
+        }
+        if (szupereroKetszeres <= sz.mekkoraAzEreje() && sz instanceof Batman) {
             logikai = true;
         }
         return logikai;

@@ -9,7 +9,7 @@ public class Main {
                 return false;
             }
         };
-        Szuperhos sz2 = new Bosszuallo(15, true) {
+        Szuperhos sz2 = new Bosszuallo(20, true) {
             @Override
             public boolean megmentiAVilagot() {
                 return false;
@@ -17,6 +17,7 @@ public class Main {
         };
 
         System.out.println(sz1.legyoziE(sz2));
+        System.out.println(sz2.legyoziE(sz1));
         System.out.println(sz1);
     }
 }
